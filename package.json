@@ -2,6 +2,9 @@
   "name": "immer-undo",
   "version": "0.0.0",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "immer": "^1.7.2"
   },

@@ -2,6 +2,9 @@
   "name": "immer-undo",
   "version": "0.0.0",
   "main": "lib/index.js",
+  "license": "MIT",
+  "repository": "aleclarson/immer-undo",
+  "description": "Revert patches, generate inverse patches, & undo/redo history",
   "files": [
     "lib"
   ],

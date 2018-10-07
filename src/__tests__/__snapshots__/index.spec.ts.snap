@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateInversePatch() generates "add" patches from "remove" patches 1`] = `
+Object {
+  "op": "add",
+  "path": Array [
+    "a",
+  ],
+  "value": 1,
+}
+`;
+
+exports[`generateInversePatch() generates "remove" patches from "add" patches 1`] = `
+Object {
+  "op": "remove",
+  "origValue": 1,
+  "path": Array [
+    "a",
+  ],
+}
+`;
+
+exports[`generateInversePatch() swaps \`value\` and \`origValue\` of "replace" patches 1`] = `
+Object {
+  "op": "replace",
+  "origValue": 1,
+  "path": Array [],
+  "value": 2,
+}
+`;
+
+exports[`revertPatch() arrays throws if a "replace" patch tries to set the "length" property of an array 1`] = `"Patches cannot set \\"length\\" of an array"`;
+
+exports[`revertPatch() arrays throws if a "replace" patch value is not the current value 1`] = `"Cannot apply patch. Target's current value doesn't match the patch's value"`;
+
+exports[`revertPatch() arrays throws if an "add" patch value is not the current value 1`] = `"Cannot revert patch. Target's current value doesn't match the patch's value"`;
+
+exports[`revertPatch() objects throws if a "remove" patch path is not missing 1`] = `"Cannot apply patch. Target's current value doesn't match the patch's value"`;
+
+exports[`revertPatch() objects throws if a "replace" patch value is not the current value 1`] = `"Cannot apply patch. Target's current value doesn't match the patch's value"`;
+
+exports[`revertPatch() objects throws if an "add" patch value is not the current value 1`] = `"Cannot revert patch. Target's current value doesn't match the patch's value"`;
+
+exports[`revertPatch() throws if an "add" patch has an empty path 1`] = `"Invalid patch: Path cannot be empty in \\"add\\" or \\"remove\\" patches"`;
+
+exports[`revertPatch() throws if an "remove" patch has an empty path 1`] = `"Invalid patch: Path cannot be empty in \\"add\\" or \\"remove\\" patches"`;
+
+exports[`revertPatch() throws if the path cannot be resolved 1`] = `"Cannot revert patch. Path does not resolve: [\\"a\\",\\"b\\"]"`;

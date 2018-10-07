@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react",
+    "declaration": true,
     "lib": ["es2017"],
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitThis": true,
     "noImplicitUseStrict": true,
+    "outDir": "lib",
+    "rootDir": "src",
     "strictNullChecks": true,
     "target": "es5"
-  }
+  },
+  "exclude": [
+    "src/__tests__"
+  ]
 }

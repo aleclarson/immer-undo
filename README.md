@@ -1,4 +1,4 @@
-# immer-undo v0.0.0
+# immer-undo v0.1.0
 
 Revert any number of [immer][1] patches.
 

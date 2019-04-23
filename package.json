@@ -9,7 +9,7 @@
     "lib"
   ],
   "dependencies": {
-    "immer": "^1.7.2"
+    "immer": "^3.0.0"
   },
   "devDependencies": {
     "@types/jest": "^23.3.3",
